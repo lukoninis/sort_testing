@@ -8,9 +8,10 @@ int main( int argc, char *argv[] )
 {
     IntArray arr;
     arr.size = SIZE;
-    arr.array = ( int * )calloc( SIZE, sizeof(int) );
+    arr.array = ( int * )calloc( arr.size, sizeof( *( arr.array ) ) );
     random_fill( arr );
     print_array( arr );
+    test_sort( arr, bubble_sort );
     free( arr.array );
     return 0;
 }

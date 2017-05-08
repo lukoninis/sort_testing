@@ -9,5 +9,6 @@ typedef struct
 
 void random_fill( const IntArray _arr );
 void print_array( const IntArray _arr );
+void copy_array( const IntArray _source, const IntArray _dest );
 
 #endif // COMMON_H
