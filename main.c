@@ -1,7 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "sort.h"
 
-int main(int argc, char *argv[])
+#define SIZE 5
+
+int main( int argc, char *argv[] )
 {
-    printf("Hello World!\n");
+    IntArray arr;
+    arr.size = SIZE;
+    arr.array = ( int * )calloc( SIZE, sizeof(int) );
+    random_fill( arr );
+    print_array( arr );
+    free( arr.array );
     return 0;
 }
