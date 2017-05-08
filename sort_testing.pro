@@ -9,7 +9,9 @@ SOURCES += main.c \
     sort/bubblesort.c \
     sort/insertsort.c \
     common/copyarray.c \
-    sort/testsort.c
+    sort/testsort.c \
+    common/swapcoord.c \
+    common/coordcompare.c
 
 HEADERS += \
     sort.h \
