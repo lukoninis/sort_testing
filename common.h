@@ -1,6 +1,9 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+#define DEBUG printf( __FUNCTION__ ); \
+    printf( "\n" );
+
 typedef struct
 {
     unsigned int size;

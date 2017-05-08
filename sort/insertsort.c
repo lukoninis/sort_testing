@@ -3,7 +3,7 @@
 
 void insert_sort( const IntArray _arr )
 {
-    printf( __FUNCTION__ );
+    DEBUG
 
     for( unsigned int i = 1; i < _arr.size; ++i )
     {

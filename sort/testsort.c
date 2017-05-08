@@ -4,8 +4,7 @@
 
 void test_sort( const IntArray _arr, void( *sort_func )( const IntArray _arr ) )
 {
-    printf( __FUNCTION__ );
-    printf( "\n" );
+    DEBUG
 
     IntArray arr;
     arr.size = _arr.size;
@@ -14,7 +13,6 @@ void test_sort( const IntArray _arr, void( *sort_func )( const IntArray _arr ) )
 
     sort_func( arr );
 
-    printf("\n");
     print_array( arr );
 
     free( arr.array );

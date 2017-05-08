@@ -3,7 +3,7 @@
 
 void bubble_sort( const IntArray _arr )
 {
-    printf( __FUNCTION__ );
+    DEBUG
 
     for( unsigned int i = 0; i < _arr.size - 1; ++i )
     {

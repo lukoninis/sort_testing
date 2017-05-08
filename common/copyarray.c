@@ -2,6 +2,8 @@
 
 void copy_array( const IntArray _source, const IntArray _dest )
 {
+    DEBUG
+
     for( unsigned int i = 0; i < _dest.size; ++i )
     {
         _dest.array[i] = 0;

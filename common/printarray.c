@@ -3,6 +3,8 @@
 
 void print_array( const IntArray _arr )
 {
+    DEBUG
+
     for( unsigned int i = 0; i < _arr.size; i++)
     {
         printf( " %d", _arr.array[i] );
