@@ -12,6 +12,7 @@ int main( int argc, char *argv[] )
     random_fill( arr );
     print_array( arr );
     test_sort( arr, bubble_sort );
+    test_sort( arr, insert_sort );
     free( arr.array );
     return 0;
 }
